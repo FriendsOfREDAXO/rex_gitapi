@@ -1,0 +1,76 @@
+rex_gitapi_menu = GitHub API
+
+rex_gitapi_title = Access to the GitHub API in REDAXO style
+
+rex_gitapi_readme = GitHub API - README / Help
+
+rex_gitapi_apitest = API tester
+
+rex_gitapi_apitest_url = URL tester
+rex_gitapi_apitest_url_title = GitHub API URL tester
+rex_gitapi_apitest_url_label_url = Enter GitHub API URL
+rex_gitapi_apitest_url_help_url = Full URL or without https://api.github.com/
+
+rex_gitapi_apitest_repo = REPO tester
+rex_gitapi_apitest_repo_title = GitHub API REPO tester
+
+rex_gitapi_apitest_special = Specials tester
+rex_gitapi_apitest_special_title = GitHub API Specials tester
+
+rex_gitapi_apitest_download = Download tester
+rex_gitapi_apitest_download_title = GitHub API Download tester
+
+rex_gitapi_apitest_options = Options
+rex_gitapi_apitest_options_use_cache = Use cache
+rex_gitapi_apitest_options_show_debug = Debug output
+rex_gitapi_apitest_options_show_json = Output JSON result
+
+rex_gitapi_apitest_data_from_cache = Data was loaded from the local GitHub cache!
+rex_gitapi_apitest_scroll_top = Take me to the top!
+rex_gitapi_apitest_btn_submit = Here we go ...
+
+rex_gitapi_results_code = PHP-Code
+
+rex_gitapi_apiauth = Authentication
+rex_gitapi_apiauth_title = GitHub authentication
+rex_gitapi_apiauth_gituser_label = GitHub UserID
+rex_gitapi_apiauth_gituser_notice = Enter the GitHub user ID here (without @)
+rex_gitapi_apiauth_gittoken_label = GitHub token
+rex_gitapi_apiauth_gittoken_notice = Generate personal access token (classic).: https://github.com/settings/tokens<br>See README / Help
+rex_gitapi_apiauth_description = <b>Notice:</b><br>To use the Github API, a token should be specified here!<br>For unauthenticated requests to the GitHub API, only 60 requests per hour are allowed.<br>Requests with a user's personal access token are limited to 5,000 per hour.
+
+rex_gitapi_limits_title = GitHub API limits
+rex_gitapi_limits_limit_limit = Maximum number of accesses to the GitHub API
+rex_gitapi_limits_limit_used = hits so far
+rex_gitapi_limits_limit_remainig = Remaining hits
+rex_gitapi_limits_limit_reset = Counter reset
+rex_gitapi_limits_limit_request = Request-URL
+rex_gitapi_limits_limit_exceeded = The GitHub API limit ({0}) has already been reached! Counter reset: {1}
+rex_gitapi_limits_notoken = (no token provided, see README / Authentication)
+
+rex_gitapi_cache = GitHub cache
+rex_gitapi_cache_title = GitHub cache settings
+rex_gitapi_cache_lifetime_label = Cache lifetime
+rex_gitapi_cache_nocache = Never create a cache
+rex_gitapi_cache_lifetime_minutes = minutes
+rex_gitapi_cache_description = GitHub access can be cached internally (<code>setCache(true)</code>). Here the lifetime is defined for all cache files.<br>If a cached version of the requested GitHub URL is available, the cached version is returned. This will not affect the limit counter for accesses to the GitHub API.<br>With the setting <b>Never create a cache</b>, no cache is created!
+rex_gitapi_cache_list_title = List of files in the GitHub API cache
+rex_gitapi_cache_btn_delete_cache = Clear GitHub cache
+rex_gitapi_cache_confirm_delete = Clear GitHub API Cache?
+rex_gitapi_cache_deleted = GitHub API cache has been cleared!
+rex_gitapi_cache_nofiles = There are no files in the GitHub API Cache!
+
+rex_gitapi_for = FriendsOfREDAXO
+rex_gitapi_for_title = FriendsOfREDAXO sample page
+rex_gitapi_for_intro = This is an example page using the <b>RexGitApi</b> class.<br>Just look at the code of the documented <b>pages\friendsofredaxo.php</b> in the AddOn directory :)
+rex_gitapi_for_output = Sample output using the <b>RexGitApi</b> class
+
+rex_gitapi_changelog = Changelog
+
+rex_gitapi_results_url = GitHub URL
+rex_gitapi_results_json = JSON Result
+rex_gitapi_results_array = PHP Array Result
+
+rex_gitapi_install_info = Note: The addon <code>GitHub API</code> can be accessed under <b>System</b>!
+rex_gitapi_api_available = The GitHub API is available!
+rex_gitapi_api_not_available = The GitHub API is NOT available!

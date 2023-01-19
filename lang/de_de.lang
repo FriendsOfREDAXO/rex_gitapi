@@ -1,0 +1,76 @@
+rex_gitapi_menu = GitHub API
+
+rex_gitapi_title = Zugriff auf die GitHub API im REDAXO-Style
+
+rex_gitapi_readme = GitHub API - README / Hilfe
+
+rex_gitapi_apitest = API-Tester
+
+rex_gitapi_apitest_url = URL-Tester
+rex_gitapi_apitest_url_title = GitHub API URL-Tester
+rex_gitapi_apitest_url_label_url = GitHub API URL eingeben
+rex_gitapi_apitest_url_help_url = Vollständige URL oder ohne https://api.github.com/
+
+rex_gitapi_apitest_repo = REPO-Tester
+rex_gitapi_apitest_repo_title = GitHub API REPO-Tester
+
+rex_gitapi_apitest_special = Specials-Tester
+rex_gitapi_apitest_special_title = GitHub API Specials-Tester
+
+rex_gitapi_apitest_download = Download-Tester
+rex_gitapi_apitest_download_title = GitHub API Download-Tester
+
+rex_gitapi_apitest_options = Optionen
+rex_gitapi_apitest_options_use_cache = Cache verwenden
+rex_gitapi_apitest_options_show_debug = Debug-Ausgabe
+rex_gitapi_apitest_options_show_json = JSON-Result ausgeben
+
+rex_gitapi_apitest_data_from_cache = Daten wurden aus dem lokalen GitHub-Cache geladen!
+rex_gitapi_apitest_scroll_top = Take me to the top!
+rex_gitapi_apitest_btn_submit = Los gehts ...
+
+rex_gitapi_results_code = PHP-Code
+
+rex_gitapi_apiauth = Authentifizierung
+rex_gitapi_apiauth_title = GitHub-Authentifizierung
+rex_gitapi_apiauth_gituser_label = GitHub-UserID
+rex_gitapi_apiauth_gituser_notice = Hier die GitHub-User-ID angeben (ohne @)
+rex_gitapi_apiauth_gittoken_label = GitHub-Token
+rex_gitapi_apiauth_gittoken_notice = Personal access token (classic) generieren: https://github.com/settings/tokens<br>Siehe README / Hilfe
+rex_gitapi_apiauth_description = <b>Hinweis:</b><br>Für die Verwendung der Github API sollte hier ein Token angegeben werden!<br>Bei nicht authentifizierten Anfragen an die GitHub API sind nur 60 Anfragen pro Stunde erlaubt.<br>Anfragen mit einem persönlichen Zugriffstoken (Personal access token) des Benutzers sind auf 5.000 pro Stunde begrenzt.
+
+rex_gitapi_limits_title = GitHub API Limits
+rex_gitapi_limits_limit_limit = Maximale Anzahl Zugriffe auf die GitHub API
+rex_gitapi_limits_limit_used = Zugriffe bisher
+rex_gitapi_limits_limit_remainig = Noch verbleibende Zugriffe
+rex_gitapi_limits_limit_reset = Reset des Counters
+rex_gitapi_limits_limit_request = Request-URL
+rex_gitapi_limits_limit_exceeded = Das GitHub API Limit ({0}) wurde bereits erreicht! Reset des Counters: {1}<br>Bitte einen Token (personal access token) anlegen und in den AddOn-Einstellungen speichern! (siehe README / Hilfe)
+rex_gitapi_limits_notoken = (kein Token angegeben, siehe README / Authentifizierung)
+
+rex_gitapi_cache = GitHub Cache
+rex_gitapi_cache_title = GitHub Cache-Einstellungen
+rex_gitapi_cache_lifetime_label = Cache-Lifetime
+rex_gitapi_cache_nocache = Niemals einen Cache anlegen
+rex_gitapi_cache_lifetime_minutes = Minuten
+rex_gitapi_cache_description = Die GitHub Zugriffe können intern gecached werden (<code>setCache(true)</code>). Hier wird für alle Cache-Dateien die Lifetime festgelegt.<br>Falls eine Cache-Version der angefragten GitHub-URL verfügbar ist wird die Cache-Version zurückgeliefert. Dadurch wird der Limit-Counter für Zugriffe auf die GitHub API nicht belastet.<br>Bei der Einstellung <b>Niemals einen Cache anlegen</b> wird kein Cache angelegt!
+rex_gitapi_cache_list_title = Liste der Dateien im GitHub API Cache
+rex_gitapi_cache_btn_delete_cache = GitHub Cache löschen
+rex_gitapi_cache_confirm_delete = GitHub API Cache löschen?
+rex_gitapi_cache_deleted = GitHub API Cache wurde gelöscht!
+rex_gitapi_cache_nofiles = Keine Dateien im GitHub API Cache vorhanden!
+
+rex_gitapi_for = FriendsOfREDAXO
+rex_gitapi_for_title = FriendsOfREDAXO Beispielseite
+rex_gitapi_for_intro = Dies ist eine Beispielseite zur Verwendung der Klasse <b>RexGitApi</b>.<br>Einfach mal den Code der dokumentierten <b>pages\friendsofredaxo.php</b> im AddOn-Verzeichnis ansehen :)
+rex_gitapi_for_output = Beispiel-Ausgabe mit Verwendung der Klasse <b>RexGitApi</b>
+
+rex_gitapi_changelog = Changelog
+
+rex_gitapi_results_url = GitHub URL
+rex_gitapi_results_json = JSON Result
+rex_gitapi_results_array = PHP Array Result
+
+rex_gitapi_install_info = Hinweis: Das Addon <code>GitHub API</code> kann unter <b>System</b> aufgerufen werden!
+rex_gitapi_api_available = Die GitHub API ist verfügbar!
+rex_gitapi_api_not_available = Die GitHub API ist NICHT verfügbar!

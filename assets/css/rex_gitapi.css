@@ -1,0 +1,49 @@
+.rex-docs-content .table-hover>tbody>tr:hover{
+    background-color:#e9f5ef !important
+}
+
+.rex-docs-content img {
+    box-shadow: 2px 2px 10px rgba(192, 192, 192, 0.5);
+}
+
+body.rex-theme-dark .rex-docs-content img {
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5)
+}
+
+@media(prefers-color-scheme:dark) {
+    body.rex-has-theme:not(.rex-theme-light) .rex-docs-content img {
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5)
+    }
+}
+
+.CodeMirror {
+    height: 300px !important;
+    min-height: 300px !important;
+}
+
+.title-octocat {
+    margin-right: 10px;
+    opacity: .5;
+    vertical-align: text-bottom;
+}
+
+.rex-page-section img.rexgitapiavatar {
+    width: 48px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity:.8;
+}
+.rex-page-section img.rexgitapiavatar:hover {
+    opacity: 1;
+}
+
+.rex-page-section img.rexgitapioctocat {
+    width: 48px;
+    margin-right: 10px;
+    border-radius: 50%;
+    opacity:.6;
+}
+.rex-page-section img.rexgitapioctocat:hover {
+    opacity: 1;
+}

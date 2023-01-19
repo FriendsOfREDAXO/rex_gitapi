@@ -1,8 +1,68 @@
-package: addon_key
-version: '0.0.0'
+package: rex_gitapi
+version: '0.0.1'
 author: 'Friends Of REDAXO'
-supportpage: https://github.com/FriendsOfREDAXO/addon_key
+supportpage: https://github.com/FriendsOfREDAXO/rex_gitapi
+
+page:
+    title: 'translate:rex_gitapi_menu'
+    hidden: true
+    perm: admin, rex_gitapi[]
+    pjax: true
+    icon: 'rex-icon fa-github'
+    popup: true
+    linkAttr: { target: _rex_gitapi }
+    haslayout: true
+    subpages:
+        apitest:
+          title: 'translate:rex_gitapi_apitest'
+          icon: 'rex-icon fa-github'
+          subpages:
+            apitest-url:
+              title: 'translate:rex_gitapi_apitest_url'
+            apitest-repo:
+              title: 'translate:rex_gitapi_apitest_repo'
+            apitest-download:
+              title: 'translate:rex_gitapi_apitest_download'
+            apitest-special:
+              title: 'translate:rex_gitapi_apitest_special'
+        apiauth:
+          title: 'translate:rex_gitapi_apiauth'
+          icon: 'rex-icon fa-user'
+        cache:
+          title: 'translate:rex_gitapi_cache'
+          icon: 'rex-icon fa-archive'
+        friendsofredaxo:
+          title: 'translate:rex_gitapi_for'
+          icon: 'rex-icon fa-magic'
+        info:
+          title: 'translate:rex_gitapi_readme'
+          subPath: README.md
+          icon: 'rex-icon fa-book'
+        changelog:
+          title: 'translate:rex_gitapi_changelog'
+          subPath: CHANGELOG.md
+          icon: 'rex-icon fa-list'
+          itemClass: pull-right
+          linkClass: btn-default
+
+pages:
+  system/rex_gitapi:
+    title: 'translate:rex_gitapi_menu'
+    perm: admin
+    icon: 'rex-icon fa-github'
+    popup: true
+    linkAttr: { href: ./?page=rex_gitapi/apitest, target: _rex_gitapi }
+
+default_config:
+  gituser: ''
+  gittoken: ''
+  cachelifetime: 15
+
+installer_ignore:
+  - .git
+  - .github
+
 requires:
-    redaxo: '^5.13.0'
-    php:
-        version: '>=7.3, <9'
+  redaxo: '^5.13.0'
+  php:
+    version: '>=7.4, <9'
